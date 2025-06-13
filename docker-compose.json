@@ -1,0 +1,11 @@
+{
+    "version": "3.8",
+    "services": {
+	"app": {
+	    "build": ".",
+	    "container_name": "rpc25519-dev",
+	    "command": "sh -c './rpc.go1.25rc1.test -test.v -test.run Test04\\[05\\] 2>&1 | tee /app/test040_045_output.log'",
+	    "working_dir": "/app"
+	}
+    }
+}
