@@ -1,4 +1,4 @@
-.PHONY: all rebuild clean chaos
+.PHONY: all rebuild clean chaos logs cptrace
 
 all:
 	docker compose -f docker-compose.json up
@@ -15,3 +15,7 @@ chaos:
 
 logs:
 	docker logs can-antithesis-find-issue74019-app-run-e3d1d1eb0779
+
+cptrace:
+	docker cp 6dff0b802cda:/root/.local/share/rr ./my-rr-trace
+
