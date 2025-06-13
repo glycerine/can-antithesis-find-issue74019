@@ -1,4 +1,5 @@
-
+## "make chaos" was run. The full log output of it
+## can be reviewed here by with this docker logs command:
 jaten@rog ~/go/src/github.com/glycerine/can-antithesis-find-issue74019 $ make logs
 docker logs can-antithesis-find-issue74019-app-run-e3d1d1eb0779
 rr: Saving execution to trace directory `/root/.local/share/rr/rpc.go1.25rc1.test-0'.
