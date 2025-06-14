@@ -13,6 +13,13 @@ clean:
 chaos:
 	docker compose -f docker-compose.json run app bash -c "rr record -h ./rpc.go1.25rc1.test ; rr pack"
 
+synctest:
+	docker compose -f docker-compose.json run app bash -c "GOTRACEBACK=all GOEXPERIMENT=synctest ./rpc.go1.25rc1.test | tee ./log.synctest.txt"
+
+
+chaos_synctest:
+	docker compose -f docker-compose.json run app bash -c "GOTRACEBACK=all GOEXPERIMENT=synctest rr record -h ./rpc.go1.25rc1.test ; rr pack"
+
 logs:
 	docker logs can-antithesis-find-issue74019-app-run-e3d1d1eb0779
 
