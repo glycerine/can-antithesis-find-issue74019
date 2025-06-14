@@ -21,7 +21,7 @@ chaos_synctest:
 	docker compose -f docker-compose.json run app bash -c "GOTRACEBACK=all GOEXPERIMENT=synctest rr record -h ./rpc.go1.25rc1.test ; rr pack"
 
 logs:
-	docker logs can-antithesis-find-issue74019-app-run-005d38f4341b
+	docker logs 005d38f4341b
 
 cptrace:
 	docker cp 005d38f4341b:/root/.local/share/rr ./chaos-synctest2-rr-trace

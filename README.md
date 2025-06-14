@@ -27,7 +27,7 @@ Log and trace of a chaos rr run under synctest are at https://github.com/glyceri
 Another example of the crash that rr chaos mode finds is in the included log
 https://github.com/glycerine/can-antithesis-find-issue74019/blob/master/log.chaos.go1.25rc1.txt
 
-The full rr (packed) trace for reply from that run is in the https://github.com/glycerine/can-antithesis-find-issue74019/tree/master/my-rr-trace subdirectory.
+The full rr (packed) trace (for replay) from that run is in the https://github.com/glycerine/can-antithesis-find-issue74019/tree/master/my-rr-trace subdirectory.
 
 ---
 author: Jason E. Aten, Ph.D.
