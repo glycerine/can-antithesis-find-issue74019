@@ -30,6 +30,6 @@ RUN git clone https://github.com/glycerine/rpc25519.git .
 
 # You can add further build steps for your application below.
 # For example:
-RUN /usr/local/go/bin/go test -race -c -o rpc.go1.25rc1.test
+RUN /usr/local/go/bin/go test -race -tags goexperiment.synctest -c -o rpc.go1.25rc1.test
 
 
