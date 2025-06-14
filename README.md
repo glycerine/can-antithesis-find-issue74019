@@ -24,10 +24,10 @@ mode happen maybe 1/3 of runs(?)--they are intermittent.
 Log and trace of a chaos rr run under synctest are at https://github.com/glycerine/can-antithesis-find-issue74019/blob/master/log.chaos-synctest2-rr-trace.txt and https://github.com/glycerine/can-antithesis-find-issue74019/tree/master/chaos-synctest2-rr-trace
 
 
-The crash that rr chaos mode finds is in the included log
+Another example of the crash that rr chaos mode finds is in the included log
 https://github.com/glycerine/can-antithesis-find-issue74019/blob/master/log.chaos.go1.25rc1.txt
 
-The full rr (packed) trace for reply is in the my-rr-trace subdirectory.
+The full rr (packed) trace for reply from that run is in the my-rr-trace subdirectory.
 
 ---
 author: Jason E. Aten, Ph.D.
