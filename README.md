@@ -2,7 +2,7 @@ can-antithesis-find-issue74019
 ==============================
 
 re the discussion here:
-https://github.com/etcd-io/etcd/issues/20170
+https://github.com/etcd-io/etcd/issues/20170#issuecomment-2971126979
 
 rr -h (chaos mode) immediately found the following bug in the Go runtime
 https://github.com/golang/go/issues/74019
