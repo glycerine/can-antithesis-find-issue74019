@@ -17,7 +17,7 @@ A simple `make` should create and run a docker container
 with the test, using docker compose. However, that will
 use the real network (which rr does not mind, but
 Antithesis surely will). To use a simulated network and
-the synctest fake clock and barrier, type `make synctest`.
+the synctest fake clock and barrier, type `make synctest`
 
 The issues seen by `make chaos_synctest` under rr's chaos
 mode happen maybe 1/3 of runs(?)--they are intermittent.
