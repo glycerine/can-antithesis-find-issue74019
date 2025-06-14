@@ -13,6 +13,9 @@ https://github.com/glycerine/rr_binary_for_issue74019?tab=readme-ov-file#analysi
 The question is: can Antithesis find a similar
 race condition in the Go runtime under go test -race?
 
+A simple `make` should create and run a docker container
+with the test, using docker compose.
+
 
 The crash that rr chaos mode finds is in the included log
 https://github.com/glycerine/can-antithesis-find-issue74019/blob/master/log.chaos.go1.25rc1.txt
