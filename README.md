@@ -23,6 +23,10 @@ The issues seen by `make chaos_synctest` under rr's chaos
 mode happen maybe 1/3 of runs(?)--they are intermittent.
 Log and trace of a chaos rr run under synctest are at https://github.com/glycerine/can-antithesis-find-issue74019/blob/master/log.chaos-synctest2-rr-trace.txt and https://github.com/glycerine/can-antithesis-find-issue74019/tree/master/chaos-synctest2-rr-trace
 
+(I wouldn't try doing make chaos_synctest under Antithesis;
+rr is probably not supported; it needs several Linux
+kernel parameters set and specific hardware support. For
+details you can see https://github.com/rr-debugger/rr/wiki/Will-rr-work-on-my-system and https://github.com/rr-debugger/rr/wiki/Building-And-Installing and my exact setup is detailed at the top of https://github.com/golang/go/issues/74019).
 
 Another example of the crash that rr chaos mode finds is in the included log
 https://github.com/glycerine/can-antithesis-find-issue74019/blob/master/log.chaos.go1.25rc1.txt
